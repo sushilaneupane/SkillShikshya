@@ -1,18 +1,19 @@
-/** @type {import('tailwindcss').Config} */
 export default {
-  darkMode: ["class"],
   content: [
     "./index.html",
-    "./src/**/*.{js,jsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {
-      colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+      animation: {
+        float: "float 3s ease-in-out infinite",
+      },
+      keyframes: {
+        float: {
+          "0%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-15px)" },
+          "100%": { transform: "translateY(0px)" },
+        },
       },
     },
   },

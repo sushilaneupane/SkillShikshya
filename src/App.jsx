@@ -1,9 +1,48 @@
+import { useState } from "react";
+import { ClarityCard } from "./components/ClarityCard";
+import { ClarityUnlockCard } from "./components/ClarityUnlockCard";
+import { LearnedCardWrapper } from "./components/LearnedCardWrapper";
+import { AchieveCard } from "./components/AchieveCard";
+import "./App.css";
+import { MentoredCard } from "./components/MentoredCard";
+
+function ClarityCardWrapper() {
+  const [isHovered, setIsHovered] = useState(false);
+
+  return (
+    <div
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      {isHovered ? <ClarityUnlockCard /> : <ClarityCard />}
+    </div>
+  );
+}
 
 function App() {
   return (
-    <>
-      <h1>Hello world</h1>
-    </>
-  ) 
+    <div className="bg-[#F5F5F5] min-h-screen p-12">
+      <div className="max-w-[1240px] mx-auto mb-10 ml-[89px]">
+        <p className="text-gray-500 text-sm mb-2">Your SkillShikshya Journey</p>
+        <h1 className="text-5xl font-bold">
+          <span className="text-[#00B894]">Step In.</span>{" "}
+          <span className="text-black">Skill Up.</span>{" "}
+          <span className="text-[#00B894]">Stand</span>{" "}
+          <span className="text-black">Out.</span>{" "}
+          <span className="text-3xl">🚀</span>
+        </h1>
+      </div>
+
+      <div className="max-w-[1240px] mx-auto ml-[89px]">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 pb-24">
+          <ClarityCardWrapper />
+          <LearnedCardWrapper />
+          <MentoredCard />
+          <AchieveCard />
+        </div>
+      </div>
+    </div>
+  );
 }
+
 export default App;
