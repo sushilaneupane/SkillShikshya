@@ -15,7 +15,8 @@ export const ClarityUnlockCard = () => {
       </button>
 
       <Card 
-        className="relative border-none w-[592px] h-[341px] bg-[#FF2D55] text-white rounded-[40px] shadow-2xl overflow-visible"
+        className="rcard-hover relative overflow-visible 
+      w-[592px] h-[341px] bg-[#FF2D55] text-white rounded-[40px] shadow-2xl"
         style={{
           clipPath: "path('M 0 40 Q 0 0 40 0 L 552 0 Q 592 0 592 40 L 592 120 A 35 35 0 0 0 592 220 L 592 301 Q 592 341 552 341 L 40 341 Q 0 341 0 301 L 0 220 A 35 35 0 0 0 0 120 Z')"
         }}
