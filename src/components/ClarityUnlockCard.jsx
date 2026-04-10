@@ -1,17 +1,25 @@
 import React from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import clarityunlock from "../assets/clarityunlock.png";
+import arrowright from "../assets/arrowright.png";
+import arrowleft from "../assets/arrowleft.png";
 import { Card, CardContent } from "@/components/ui/card";
+
 
 export const ClarityUnlockCard = () => {
   return (
     <div className="relative flex items-center justify-center font-sans">
       <button className="absolute left-[-22px] top-1/2 -translate-y-1/2 z-50 bg-white p-3 rounded-full shadow-lg border border-slate-100">
-        <ChevronLeft className="w-5 h-5 text-slate-800" />
+        <img
+              src={arrowleft}
+              alt="Arrow Unlocked Character"
+              className="w-5 h-5 text-slate-800"/>
       </button>
       
       <button className="absolute right-[-22px] top-1/2 -translate-y-1/2 z-50 bg-white p-3 rounded-full shadow-lg border border-slate-100">
-        <ChevronRight className="w-5 h-5 text-slate-800" />
+        <img
+              src={arrowright}
+              alt="Arrow Unlocked Character"
+              className="w-5 h-5 text-slate-800"/>
       </button>
 
       <Card 
@@ -40,7 +48,7 @@ export const ClarityUnlockCard = () => {
             <img
               src={clarityunlock}
               alt="Clarity Unlocked Character"
-              className="w-[390px] h-auto rounded-b-[40px] object-contain drop-shadow-[0_20px_30px_rgba(0,0,0,0.5)]"
+              className="w-[390px] h-auto rounded-b-[40px] z-20 object-contain drop-shadow-[0_20px_30px_rgba(0,0,0,0.5)]"
             />
           </div>
 

@@ -3,29 +3,33 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export const OngoingCoursesCard = () => {
   return (
-    <Card className="card-hover relative overflow-hidden 
-      w-[200px] h-[340px] 
-      bg-[#FCE4EC] text-[#E91E63] rounded-[40px] border-none shadow-xl">
+    <Card className="relative overflow-hidden border-none rounded-[34px] bg-[#FDE7EE] text-[#EC0B4D] w-[300px] h-[463px] shadow-none">
+      <CardContent className="relative h-full p-0">
 
-      <CardContent className="h-full p-8 flex flex-col justify-between items-center text-center">
-        <div className="flex flex-col items-center gap-1">
-          <p className="font-bold text-[13px] leading-[140%] tracking-wide">
-            Ongoing
-          </p>
-          <p className="font-bold text-[13px] leading-[140%] tracking-wide">
-            Courses
-          </p>
-          <p className="font-normal text-[10px] opacity-75 leading-[130%] mt-2 max-w-[140px]">
-            currently preparing—don't miss out!
-          </p>
+        {/* Rotated heading */}
+        <div className="absolute left-1/2 top-1/2 rotate-[-90deg] origin-left">
+          <h2 className="text-[34px] font-bold leading-none tracking-[-0.04em]">
+            Ongoing <br/>Courses
+          </h2>
         </div>
 
-        <div className="text-center">
-          <p className="font-bold text-[90px] leading-[100%] -my-2">10</p>
-          <div className="w-8 h-8 bg-[#E91E63] rounded-lg flex items-center justify-center text-white text-lg font-bold mx-auto mt-3">
-            +
+        {/* Rotated description */}
+      <p className="absolute top-1/5 left-1/3 -translate-x-1/2 -translate-y-1/2 rotate-[-90deg] origin-right text-[20px] leading-[1.5] font-medium tracking-[-0.01em] text-[#EC0B4D] whitespace-nowrap">
+              currently happening—don't <br/>miss out on the action!
+           </p>
+
+        {/* Bottom number */}
+        <div className="absolute left-[24px] bottom-[20px] flex items-start">
+          <div className="relative">
+            <span className="block text-[190px] font-black leading-[0.85] tracking-[-0.08em] text-[#EC0B4D]">
+              10
+            </span>
+            <span className="absolute right-[-40px] top-[1px] text-[54px] font-black leading-none text-[#EC0B4D]">
+              +
+            </span>
           </div>
         </div>
+
       </CardContent>
     </Card>
   );

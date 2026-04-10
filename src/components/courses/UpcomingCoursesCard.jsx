@@ -3,34 +3,33 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export const UpcomingCoursesCard = () => {
   return (
-    <Card className="relative overflow-hidden border-none rounded-[34px] bg-[#FDE7EE] text-[#EC0B4D] w-[218px] h-[463px] shadow-none">
+    <Card className="relative overflow-hidden border-none rounded-[34px] bg-[#FDE7EE] text-[#EC0B4D] w-[300px] h-[463px] shadow-none">
       <CardContent className="relative h-full p-0">
-        {/* Rotated heading */}
-        <div className="absolute left-[60px] top-[140px] rotate-[-90deg] origin-left">
-          <h2 className="text-[34px] font-bold leading-none tracking-[-0.04em] whitespace-nowrap">
-            Upcoming
-          </h2>
-          <h2 className="text-[34px] font-bold leading-none tracking-[-0.04em] mt-[8px] whitespace-nowrap">
-            Courses
+
+        {/* Rotated heading (centered like Ongoing) */}
+        <div className="absolute left-1/4 top-1/4 -translate-x-1/2 -translate-y-1/2 rotate-[-90deg] origin-right">
+          <h2 className="text-[34px] font-bold leading-none tracking-[-0.04em]">
+            Upcoming <br /> Courses
           </h2>
         </div>
 
-        {/* Rotated description */}
-        <p className="absolute left-[140px] top-[120px] rotate-[-90deg] origin-left text-[12px] leading-[1.5] font-medium tracking-[-0.01em] max-w-[200px] text-[#EC0B4D] whitespace-normal">
-          exciting new courses waiting to boost your skills.
+        {/* Rotated description (inline + centered style) */}
+        <p className="absolute top-1/5 left-1/3 -translate-x-1/2 -translate-y-1/2 rotate-[-90deg] origin-right text-[20px] leading-[1.5] font-medium tracking-[-0.01em] text-[#EC0B4D] whitespace-nowrap">
+          exciting new courses <br/> waiting to boost your skills!
         </p>
 
-        {/* Bottom number */}
+        {/* Bottom number (same as Ongoing) */}
         <div className="absolute left-[24px] bottom-[20px] flex items-start">
           <div className="relative">
-            <span className="block text-[145px] font-black leading-[0.85] tracking-[-0.08em] text-[#EC0B4D]">
+            <span className="block text-[190px] font-black leading-[0.85] tracking-[-0.08em] text-[#EC0B4D]">
               05
             </span>
-            <span className="absolute right-[-18px] top-[3px] text-[54px] font-black leading-none text-[#EC0B4D]">
+            <span className="absolute right-[-40px] top-[1px] text-[54px] font-black leading-none text-[#EC0B4D]">
               +
             </span>
           </div>
         </div>
+
       </CardContent>
     </Card>
   );

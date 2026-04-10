@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { ClarityCard } from "./components/ClarityCard";
 import { ClarityUnlockCard } from "./components/ClarityUnlockCard";
 import { LearnedCardWrapper } from "./components/LearnedCardWrapper";
@@ -22,12 +22,12 @@ function ClarityCardWrapper() {
 
 function App() {
   return (
-    <>
+    <div className="flex justify-center"> 
     <div className="bg-[#F5F5F5] min-h-screen p-12">
       <div className="max-w-[1240px] mx-auto mb-10 ml-[89px]">
         <div className="flex justify-between items-start mb-6">
           <div>
-            <p className="text-gray-500 text-sm mb-2">Your SkillShikshya Journey</p>
+            <p className="text-gray-900 text-bold text-xl mb-2">Your SkillShikshya Journey</p>
             <h1 className="text-5xl font-bold">
               <span className="text-[#00B894]">Step In.</span>{" "}
               <span className="text-black">Skill Up.</span>{" "}
@@ -51,7 +51,7 @@ function App() {
         </div>
       </div>
     </div>
-    </>
+    </div>
   );
   
 }

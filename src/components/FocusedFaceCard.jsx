@@ -1,5 +1,6 @@
 import React from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import arrowright from "../assets/arrowright.png";
+import arrowleft from "../assets/arrowleft.png";
 import focusedface from "../assets/focusedface.png";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -44,14 +45,21 @@ export const FocusedFaceCard = ({ onArrowClick }) => {
         onClick={handleLeftClick}
         className="absolute left-[-22px] top-1/2 -translate-y-1/2 z-50 bg-white p-3 rounded-full shadow-lg border border-slate-100 hover:bg-gray-100 cursor-pointer"
       >
-        <ChevronLeft className="w-5 h-5 text-slate-800" />
-      </button>
+       <img
+                     src={arrowleft}
+                     alt="Arrow Unlocked Character"
+                     className="w-5 h-5 text-slate-800"/>
+             </button>
+             
       
       <button 
         onClick={handleRightClick}
         className="absolute right-[-22px] top-1/2 -translate-y-1/2 z-50 bg-white p-3 rounded-full shadow-lg border border-slate-100 hover:bg-gray-100 cursor-pointer"
       >
-        <ChevronRight className="w-5 h-5 text-slate-800" />
+        <img
+                     src={arrowright}
+                     alt="Arrow Unlocked Character"
+                     className="w-5 h-5 text-slate-800"/>
       </button>
     </div>
   );

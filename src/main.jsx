@@ -10,7 +10,7 @@ createRoot(document.getElementById('root')).render(
     <Router>
       <Routes>
         <Route path="/" element={<App />} />
-        {/* <Route path="/courses" element={<CoursesPage />} /> */}
+        <Route path="/courses" element={<CoursesPage />} />
       </Routes>
     </Router>
   </StrictMode>,
