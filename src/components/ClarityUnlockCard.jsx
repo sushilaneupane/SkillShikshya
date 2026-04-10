@@ -44,18 +44,7 @@ export const ClarityUnlockCard = () => {
           </div>
 
           <div className="pt-10 pr-12">
-            <h2 className="absolute 
-              top-[56px] 
-              left-[326px] 
-              w-[241px] 
-              h-[72px] 
-              z-40
-              font-['Nohemi'] 
-              font-bold 
-              text-[32px] 
-              leading-[100%] 
-              letter-spacing-0 
-              opacity-100">
+            <h2 className="font-['Nohemi'] font-bold text-[20px] mb-3 leading-[100%] letter-spacing-0">
               Clarity unlocked— <br />
               stickers, sips, and skills <br />
               all in one go!

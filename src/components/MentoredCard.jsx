@@ -7,18 +7,18 @@ export const MentoredCard = ({ onArrowClick }) => {
   return (
     <div className="relative inline-block">
       <Card 
-        className="card-hover relative 
-          w-[592px] h-[341px] 
-          bg-[#704ba0] text-white rounded-[40px] border-none shadow-xl"
+        className="card-hover relative overflow-visible 
+      w-[592px] h-[341px] 
+      bg-[#704ba0] text-white rounded-[40px] border-none shadow-xl"
       >
-        <img
+        <img   
           src={mentored}
           alt="Mentorship Illustration"
           className="character-img absolute 
-            -left-12 
-            bottom-[-50px] 
-            w-[280px] 
-            drop-shadow-2xl z-20"
+          -left-12 
+          bottom-[-90px] 
+          w-[380px] 
+          drop-shadow-2xl z-20"
         />
 
         <CardContent className="h-full p-10 pr-12 flex flex-col justify-center items-end text-right">

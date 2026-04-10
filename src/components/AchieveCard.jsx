@@ -12,9 +12,9 @@ export const AchieveCard = () => {
                 src={achieve}
                 alt="Achieve and Showcase Illustration"
                 className="character-img absolute 
-                    right-[-40px] 
-                    bottom-[-70px] 
-                    w-[300px] 
+                    right-[-60px] 
+                    bottom-[-90px] 
+                    w-[330px] 
                     z-20 
                     drop-shadow-2xl"
             />

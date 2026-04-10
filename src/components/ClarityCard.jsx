@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 export const ClarityCard = () => {
   return (
     <Card className="card-hover relative overflow-visible 
-      w-[592px] h-[341px] 
+            w-[592px] h-[341px] 
       bg-[#FF2D55] text-white rounded-[40px] border-none shadow-xl">
 
       <img
@@ -13,7 +13,7 @@ export const ClarityCard = () => {
         alt="Start with Clarity Character"
         className="character-img absolute 
           -left-12 
-          bottom-[-50px] 
+          bottom-[-90px] 
           w-[280px] 
           drop-shadow-2xl z-20"
       />
@@ -29,8 +29,7 @@ export const ClarityCard = () => {
         </p>
 
         <p className="font-['Outfit'] font-normal text-[18px] opacity-90 leading-[100%] letter-spacing-0 max-w-[280px] mb-6">
-          Overwhelmed by too many learning options? SkillShikshya provides a clear, 
-          curated roadmap from the start. Whether you're a beginner or upskilling, 
+          Overwhelmed by too many learning options? SkillShikshya provides a clear, curated roadmap from the start. Whether you're a beginner or upskilling, 
           we have a path tailored to your growth.
         </p>
 

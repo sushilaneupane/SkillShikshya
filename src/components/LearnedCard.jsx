@@ -13,7 +13,7 @@ export const LearnedCard = () => {
               alt="Character Learning"
               className="character-img absolute 
                 right-[-20px] 
-                top-[40px] 
+                top-[30px] 
                 w-[240px] 
                 drop-shadow-2xl 
                 z-20"
@@ -29,7 +29,7 @@ export const LearnedCard = () => {
                     Practical skills, real projects.
                 </p>
 
-                <p className="font-['Outfit'] font-normal text-[18px] opacity-90 leading-[100%] letter-spacing-0 max-w-[280px] mb-6">
+                <p className="ffont-['Outfit'] font-normal text-[18px] opacity-90 leading-[100%] letter-spacing-0 max-w-[280px] mb-6">
                     Theory is great, but action is better. At SkillShikshya, you learn by doing.
                     Hands-on projects and real-world scenarios help you build, break,
                     and create—leading to true mastery.
